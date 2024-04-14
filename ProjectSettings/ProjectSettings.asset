@@ -650,6 +650,7 @@ PlayerSettings:
   metroTileBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21568628, a: 0}
   metroSplashScreenBackgroundColor: {r: 0.12941177, g: 0.17254902, b: 0.21568628, a: 1}
   metroSplashScreenUseBackgroundColor: 0
+  syncCapabilities: 0
   platformCapabilities: {}
   metroTargetDeviceFamilies: {}
   metroFTAName: 
@@ -704,10 +705,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: ae512de8-6c80-4733-b856-e72a0623d871
+  cloudProjectId: b9a742a8-1abb-4d4c-95dc-4a3f05f3eefb
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Pong
+  projectName: Pong 2024-04-14_11-32-08
   organizationId: mrsandes
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

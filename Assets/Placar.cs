@@ -1,39 +1,27 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-public class ScoreManager : MonoBehaviour {
-    public Text player1ScoreText;
-    public Text player2ScoreText;
-
-    private int player1Score = 0;
-    private int player2Score = 0;
+public class Placar : MonoBehaviour {
+    public TextMeshProUGUI textoPlacar;
+    private int pontuacaoJogador1 = 0;
+    private int pontuacaoJogador2 = 0;
 
     void Start() {
-        UpdateScoreText();
+        AtualizarPlacar();
     }
 
-    public void AddPlayer1Score(int points) {
-        player1Score += points; 
-        UpdateScoreText();
+    public void Jogador1MarcouPonto() {
+        pontuacaoJogador1++;
+        AtualizarPlacar();
     }
 
-    public void AddPlayer2Score(int points) {
-        player2Score += points;
-        UpdateScoreText();
+    public void Jogador2MarcouPonto() {
+        pontuacaoJogador2++;
+        AtualizarPlacar();
     }
 
-    void OnCollisionEnter2D(Collision2D colisao) {
-        if (colisao.gameObject.name == "parede_esquerda") {
-            pontosPlayer2++;
-        }
-
-        if (colisao.gameObject.name == "parede_direita") {
-            pontosPlayer1++;
-        }
-    }
-
-    void UpdateScoreText() {
-        player1ScoreText.text = player1Score.ToString();
-        player2ScoreText.text = player2Score.ToString();
+    void AtualizarPlacar() {
+        textoPlacar.text = pontuacaoJogador1 + " - " + pontuacaoJogador2;
     }
 }
